@@ -54,9 +54,85 @@
     "dyn": 0,
     "extendNew": 10,
     "extendRev": 50,
-    "media_files": [],
+    "media_files": [
+        "img_202007262202091635253763995958893.jpg"
+    ],
     "name": "active::everything::shareable",
     "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.info {\n  max-width: 30em;\n  margin: 0.75em auto;\n  color: #333;\n  font-size: 90%;\n  font-style: italic;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Info",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "ContextCue",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic (no reverse)",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Forward",
+                    "ord": 0,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Front}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
@@ -207,13 +283,13 @@
         },
         {
             "__type__": "NoteModel",
-            "crowdanki_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
-            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.info {\n  max-width: 30em;\n  margin: 0.75em auto;\n  color: #333;\n  font-size: 90%;\n  font-style: italic;\n}\n",
+            "crowdanki_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
             "flds": [
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "Front",
+                    "name": "Name",
                     "ord": 0,
                     "rtl": false,
                     "size": 20,
@@ -222,7 +298,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "Back",
+                    "name": "Symbol",
                     "ord": 1,
                     "rtl": false,
                     "size": 20,
@@ -231,7 +307,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "Info",
+                    "name": "Base10",
                     "ord": 2,
                     "rtl": false,
                     "size": 20,
@@ -240,7 +316,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "ContextCue",
+                    "name": "LongscaleWord",
                     "ord": 3,
                     "rtl": false,
                     "size": 20,
@@ -248,16 +324,168 @@
                 }
             ],
             "latexPost": "\\end{document}",
-            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
             "latexsvg": false,
-            "name": "Basic (no reverse)",
+            "name": "SI Prefixes",
             "req": [
                 [
                     0,
-                    "any",
+                    "all",
                     [
-                        0,
+                        0
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        1
+                    ]
+                ],
+                [
+                    2,
+                    "all",
+                    [
+                        0
+                    ]
+                ],
+                [
+                    3,
+                    "all",
+                    [
+                        2
+                    ]
+                ],
+                [
+                    4,
+                    "all",
+                    [
+                        2
+                    ]
+                ],
+                [
+                    5,
+                    "all",
+                    [
                         3
+                    ]
+                ]
+            ],
+            "sortf": 2,
+            "tags": [
+                "si-prefixes",
+                "wikipedia"
+            ],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Symbol}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Name to Symbol",
+                    "ord": 0,
+                    "qfmt": "{{Name}}<br>\nto symbol"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Name}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Symbol to Name",
+                    "ord": 1,
+                    "qfmt": "SI prefix: {{Symbol}}<br>\nto name"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Base10}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Name to Base 10",
+                    "ord": 2,
+                    "qfmt": "{{Name}}<br>\nto base 10"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Name}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Base 10 to Name",
+                    "ord": 3,
+                    "qfmt": "SI prefix name for {{Base10}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{LongscaleWord}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Base10 to Word",
+                    "ord": 4,
+                    "qfmt": "Zahlwort für {{Base10}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Base10}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Word to Base10",
+                    "ord": 5,
+                    "qfmt": "{{LongscaleWord}}<br>\nzu Zehnerpotenz"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "a6a2f2e0-6d5b-11e6-adf3-8c705a50cbf0",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Purpose",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Command",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Extra",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Source",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Command line",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        0
                     ]
                 ]
             ],
@@ -265,15 +493,13 @@
             "tags": [],
             "tmpls": [
                 {
-                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n<br>\n{{Extra}}\n<br>\n<a href=\"{{text:Source}}\">{{Source}}</a>",
                     "bafmt": "",
-                    "bfont": "",
                     "bqfmt": "",
-                    "bsize": 0,
                     "did": null,
-                    "name": "Forward",
+                    "name": "TypeCard",
                     "ord": 0,
-                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Front}}"
+                    "qfmt": "{{Purpose}}\n<br>\n{{type:Command}}"
                 }
             ],
             "type": 0,
@@ -281,6 +507,1672 @@
         }
     ],
     "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "How to compare two files not in repo using git",
+                "git diff --no-index",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "s#3|>_gO)u",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "computer",
+                "git",
+                "shareable::yes",
+                "tools"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Alternative title to the TED Talk \"Why you think you're right even if you're wrong\"?",
+                "'Why \"scout mindset\" is crucial to good judgement?'",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "D-OKpJ`yM~",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "julia-galef",
+                "rationality",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Die {{c1::Dreyfus-Affäre}}&nbsp;war ein {{c2::Justizskandal}}, der die {{c3::französische Politik und Gesellschaft}} in den {{c4::letzten Jahren des 19.}} Jahrhunderts tief spaltete.",
+                "Quelle: Wikipedia"
+            ],
+            "flags": 0,
+            "guid": "z54fC#p3qN",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "julia-galef",
+                "rationality",
+                "shareable::yes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Die&nbsp;Dreyfus-Affäre betraf die Verurteilung des {{c1::Alfred}} Dreyfus {{c2::1894:: Jahr}} durch ein Kriegsgericht in Paris wegen angeblichen {{c4::Landesverrats}} zugunsten des {{c3::Deutschen Kaiserreichs}}",
+                "Quelle: Wikipedia"
+            ],
+            "flags": 0,
+            "guid": "j9`34hmg6[",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "julia-galef",
+                "rationality",
+                "shareable::yes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Definition Soldier Mindset (according to Julia Galef) (2 parts)",
+                "- Trying to make<b> </b>some<b> ideas win</b> and others <b>lose</b><br><div>- The drive to <b>attack or defend</b> ideas.</div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "b,_y9tY?th",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "julia-galef",
+                "rationality",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "alternative word for \"soldier mindset\"",
+                "Motivated Reasoning",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "f*-,%!(Cj|",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "julia-galef",
+                "rationality",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "alternative word for motivated reasoning (Julia Galef)",
+                "Soldier mindset",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "tn!kvf73@o",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "julia-galef",
+                "rationality",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "the scout mindset is trying to get an {{c1::accurate picture of reality}}, even when that's {{c2::unpleasant}} or {{c2::unconvenient}}",
+                ""
+            ],
+            "flags": 0,
+            "guid": "cckL|fuDv5",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "julia-galef",
+                "rationality",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "A",
+                "1",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "JFnC<g:,9.",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "B",
+                "2",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "rMjQbc1p5]",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "C",
+                "3",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "xuQDLM85VP",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "D",
+                "4",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "DQKcb1AAzN",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "E",
+                "5",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "Bw0xdG4/!",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "F",
+                "6",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "O`U}n/.K@&",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "G",
+                "7",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "so*JlXJ(`3",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "H",
+                "8",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "tT[G[fjy)1",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "I",
+                "9",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "H^sr]AxNZB",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "J",
+                "10",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "HY1>5?2WF#",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "K",
+                "11",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "Rb)W<3KIF*",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "L",
+                "12",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "MhZC54X;Cv",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "M",
+                "13",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "g[&_y2=B1r",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "N",
+                "14",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "N~_(uFMf6Y",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "O",
+                "15",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "Es)5a__3.o",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "P",
+                "16",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "KP3S>6(^Zy",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Q",
+                "17",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "g`rrURs1Us",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "R",
+                "18",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "p]+CptP;Fl",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "S",
+                "19",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "G7RG#Cc)!C",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "T",
+                "20",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "N^lgjM_/!r",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "U",
+                "21",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "E*9ZHz:2uM",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "V",
+                "22",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "oYRF26D!J2",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "W",
+                "23",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "kTQt<uxf?B",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "X",
+                "24",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "A}dDurqY<q",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Y",
+                "25",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "E75eJ3L|;S",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Z",
+                "26",
+                "",
+                "alphapos"
+            ],
+            "flags": 0,
+            "guid": "w.N@SCAfq!",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "alphabet",
+                "alphapos",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Der {{c1::Gregorianische}} Kalender, eingeführt {{c3::1582}}, wiederholt sich alle {{c2::400}} Jahre",
+                "Quelle: Mathemagics Arthur Benjamin<br>1582: Delfin."
+            ],
+            "flags": 0,
+            "guid": "4[B?E",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Welche Jahre sind Schaltjahre? (3 Regeln)",
+                "- durch 4 teilbar<br>- nicht durch 100 teilbar<br>- es sei denn, es ist durch 400 teilbar",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8k>FP",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The Gregorian Calendar was not adopted by {{c1::England}} (and the {{c1::American}} Colonies) until {{c2::1752}}",
+                "Quelle: Arthur Benjamin Mathemagics<br>1752: Tage Alien"
+            ],
+            "flags": 0,
+            "guid": "w(ReT",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Yotta",
+                "Y",
+                "10<sup>24</sup>",
+                "Quadrillion"
+            ],
+            "flags": 0,
+            "guid": "c7:hq.Zm!1",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Zetta",
+                "Z",
+                "10<sup>21</sup>",
+                "Trilliarde"
+            ],
+            "flags": 0,
+            "guid": "oZS6#xVqQS",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Exa",
+                "E",
+                "10<sup>18</sup>",
+                "Trillion"
+            ],
+            "flags": 0,
+            "guid": "PQT/{A{um-",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Peta",
+                "P",
+                "10<sup>15</sup>",
+                "Billiarde"
+            ],
+            "flags": 0,
+            "guid": "rK|c&MD%[R",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Tera",
+                "T",
+                "10<sup>12</sup>",
+                "Billion"
+            ],
+            "flags": 0,
+            "guid": "DXs[G%|8.&",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Giga",
+                "G",
+                "10<sup>9</sup>",
+                "Milliarde"
+            ],
+            "flags": 0,
+            "guid": "N6iLgvm1!A",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Mega",
+                "M",
+                "10<sup>6</sup>",
+                "Million"
+            ],
+            "flags": 0,
+            "guid": "eoHtG4AJNS",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Kilo",
+                "k",
+                "10<sup>3</sup>",
+                "Tausend"
+            ],
+            "flags": 0,
+            "guid": "s>A3YYb1[U",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Hekto",
+                "h",
+                "10<sup>2</sup>",
+                "Hundert"
+            ],
+            "flags": 0,
+            "guid": "eAKr%E/44+",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Deka",
+                "da",
+                "10<sup>1</sup>",
+                "Zehn"
+            ],
+            "flags": 0,
+            "guid": "d?u|cbgq{I",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Dezi",
+                "d",
+                "10<sup>-1</sup>",
+                "Zehntel"
+            ],
+            "flags": 0,
+            "guid": "y~0Oew-Obg",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Zenti",
+                "c",
+                "10<sup>-2</sup>",
+                "Hunderstel"
+            ],
+            "flags": 0,
+            "guid": "x=e4Kt-P^y",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Milli",
+                "m",
+                "10<sup>-3</sup>",
+                "Tausendstel"
+            ],
+            "flags": 0,
+            "guid": "lE!H#lGZj~",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Mikro",
+                "μ",
+                "10<sup>-6</sup>",
+                "Millionstel"
+            ],
+            "flags": 0,
+            "guid": "vzm-i2N-{]",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Nano",
+                "n",
+                "10<sup>-9</sup>",
+                "Milliardstel"
+            ],
+            "flags": 0,
+            "guid": "BHg&ia00{c",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Piko",
+                "p",
+                "10<sup>-12</sup>",
+                "Billionstel"
+            ],
+            "flags": 0,
+            "guid": "rnXYC`g9ja",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Femto",
+                "f",
+                "10<sup>-15</sup>",
+                "Billiardstel"
+            ],
+            "flags": 0,
+            "guid": "i:zwy${d,L",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Atto",
+                "a",
+                "10<sup>-18</sup>",
+                "Trillionstel"
+            ],
+            "flags": 0,
+            "guid": "LdHT!WF4~K",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Zepto",
+                "z",
+                "10<sup>-21</sup>",
+                "Trilliardstel"
+            ],
+            "flags": 0,
+            "guid": "OefT^L56C}",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Yokto",
+                "y",
+                "10<sup>-24</sup>",
+                "Quadrillionstel"
+            ],
+            "flags": 0,
+            "guid": "O1QPQ=br7p",
+            "note_model_uuid": "bb3abcca-da3e-11ea-8969-3c970e00903e",
+            "tags": [
+                "shareable::yes",
+                "si-prefixes",
+                "wikipedia"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency L1 cache reference (~2012)",
+                "0.5 ns<br><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "KUyF1jeb{h",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency Branch mispredict (~2012)",
+                "5 ns<div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "l.QE$5?$9q",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency L2 cache reference (~2012)",
+                "7 ns <div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "DkWPl(oJ-C",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency L2 cache reference in relation to L1 cache (~2012)",
+                "14x L1 cache<div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "NSSM$1@b{T",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency Mutex lock/unlock (~2012)",
+                "<div>25 ns</div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "zPGd8@9UX",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency Main memory reference (~2012)",
+                "<div>100 ns</div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "nYN8MhK`/E",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency Main memory reference (in relation to L2 cache) (~2012)",
+                "<div>20x L2 cache</div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "P-bx;e::qn",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency Compress 1K bytes with Zippy (~2012)",
+                "<div>3000ns = 3μs</div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "b&/D#A)*:=",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Send 1K bytes over 1 Gbps network (~2012)",
+                "<div>10,000ns = 10μs</div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "JYzl62na^+",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Read 4K randomly from SSD [~1GB/sec SSD]&nbsp;(~2012)",
+                "<div>150,000ns = 150μs<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "sgghHy){!C",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Read 1 MB sequentially from memory (~2012)",
+                "<div>250,000ns = 250μs<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "j5]@;TPkJC",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Round trip within same datacenter (~2012)",
+                "<div>500,000ns = 500μs<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "thlq(S#u(U",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Read 1 MB sequentially from SSD [~1GB/sec SSD] (~2012)",
+                "<div>1,000,000 ns = 1,000 μs = 1 ms<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "OcD|?[>5Td",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Disk seek (~2012)",
+                "<div>10,000,000 ns = 10,000 μs = 10 ms<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "e{Hj$aG0hQ",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Read 1 MB sequentially from disk (~2012)",
+                "<div>20,000,000 ns = 20,000 μs = 20 ms<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "E}}*6DQd8E",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Send packet CA-&gt;Germany-&gt;CA (~2012)",
+                "<div>150,000,000 ns = 150,000 μs = 150 ms<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "pPs!cD6zs>",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Read 1 MB sequentially from disk (in relation to memory) (~2012)",
+                "<div>Factor 80<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "zE|srY,W>}",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Latency&nbsp;Read 1 MB sequentially from disk (in relation to SSD) (~2012)",
+                "<div>Factor 20<br></div><div><sub>source&nbsp;https://gist.github.com/jboner/2841832</sub></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "nPND%ziA!C",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "programming",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Januar hat {{c1::31}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "jH2rItO6(",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Februar hat {{c1::28}} oder {{c1::29}} Tage",
+                "Im Schaltjahr sind es 29."
+            ],
+            "flags": 0,
+            "guid": "qW4O{vI`dj",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "März hat {{c1::31}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "iW*n6q]1dQ",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "April hat {{c1::30}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Q[:]D`Xc2z",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Mai hat {{c1::31}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "s2SL%A?Li9",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Juli hat {{c1::31}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "g(YAF$;0~f",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "August hat {{c1::31}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "LpU13{vBTM",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Oktober hat {{c1::31}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "C1SjGJ!3;d",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Dezember hat {{c1::31}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Nk3No^.ZJ4",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Juni hat {{c1::30}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "u#`aspyPMg",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "September hat {{c1::30}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5$d(}^cVO",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "November hat {{c1::30}} Tage",
+                ""
+            ],
+            "flags": 0,
+            "guid": "hsV>6JW=K4",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "monate",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Lichtgeschwindigkeit (in m/s)",
+                "c = 299 792 485 m/s<div>in Pappe Kappen Reh-Wal (Rüffel?)</div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "BKD-[B>v{v",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "physik",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Im speziellen Fall der {{c1::geostationären}} Umlaufbahn steht ein Satellit für den Beobachter immer am selben Punkt am Himmel.<div>Der Bahnradius beträgt ca. {{c2::42.000}}&nbsp;km Nach Abzug des Äquatorradius entspricht dies einem Abstand von etwa {{c3::36.000}}&nbsp;km zur Erdoberfläche.</div>",
+                "421 64: Rand Schere<div>357 86: Melkfisch</div><div>63 78: Schaumkaffee</div>"
+            ],
+            "flags": 0,
+            "guid": "E^g#e|9$mM",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "physik",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Der Erdradius&nbsp;beträgt im Mittel {{c1::6.371}}&nbsp;Kilometer",
+                "6371: Schaum Akt"
+            ],
+            "flags": 0,
+            "guid": "z-x@(bAy)k",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "physik",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Erdumfang",
+                "ca. 40.000 km",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "bd2<QWs@VH",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "number",
+                "physik",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1/7 = 0.{{c1::142857 periode}}",
+                "der NFL Coup<br>Tür Hanf Lego<br>14 * 2 = 28<br>28 * 2 = 56<br>(56+1=57)"
+            ],
+            "flags": 0,
+            "guid": "4R<.1",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "ASL: how to count to 9",
+                "<img src=\"img_202007262202091635253763995958893.jpg\">",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6tMx7",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Baltische Staaten (Nord =&gt; Süd)",
+                "Estland<div>Lettland</div><div>Littauen</div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "zs{T/kzPjf",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "geography",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Die Europäische Union&nbsp;ist ein {{c1::Staatenverbund}} aus {{c2::27}}&nbsp;europäischen Ländern. [Stand Februar 2020]",
+                ""
+            ],
+            "flags": 0,
+            "guid": "cI;*pZT1#c",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Einwohner Europäische Union [Stand 2020]",
+                "ca. 450 Mio.",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "th:pD>_)9}",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "geopolitics",
+                "number",
+                "shareable::yes"
+            ]
+        },
         {
             "__type__": "Note",
             "data": "",
@@ -599,6 +2491,40 @@
             "tags": [
                 "EU",
                 "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Abstand Erde - Mond",
+                "im Mittel ca. 360.000 km",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "B84Q+3,A.T",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "astronomy",
+                "number",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><div> </div> </div>vim: Count number of matches of the last searched pattern",
+                ":%s///gn",
+                "mapped to &lt;Leader&gt;* in my setup.",
+                "https://vim.fandom.com/wiki/Count_number_of_matches_of_a_pattern"
+            ],
+            "flags": 0,
+            "guid": "B*#lLhD`FH",
+            "note_model_uuid": "a6a2f2e0-6d5b-11e6-adf3-8c705a50cbf0",
+            "tags": [
                 "shareable::yes"
             ]
         }
