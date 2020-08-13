@@ -1,0 +1,606 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "4e9654ac-ddb9-11ea-aa72-3c970e00903e",
+    "deck_config_uuid": "92b5e68e-cb99-11ea-9c59-8c705abd0bf4",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "92b5e68e-cb99-11ea-9c59-8c705abd0bf4",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    30,
+                    1440
+                ],
+                "leechAction": 1,
+                "leechFails": 4,
+                "minInt": 1,
+                "mult": 0.2
+            },
+            "maxTaken": 180,
+            "name": "default",
+            "new": {
+                "bury": true,
+                "delays": [
+                    10,
+                    1440
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    3,
+                    4
+                ],
+                "order": 0,
+                "perDay": 20,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": true,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1,
+                "maxIvl": 365,
+                "minSpace": 1,
+                "perDay": 9999
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [],
+    "name": "active::everything::shareable",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-weight: bold;\n color: blue;\n}\n.nightMode .cloze {\n color: lightblue;\n}\n.small {\nfont-size: 14px;\n}",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Text",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Extra",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Cloze",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{cloze:Text}}<br><br>\n<div class=\"small\">{{Extra}}</div>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Cloze",
+                    "ord": 0,
+                    "qfmt": "{{cloze:Text}}"
+                }
+            ],
+            "type": 1,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n\n.info {\n  max-width: 30em;\n  margin: 0.75em auto;\n  color: #333;\n  font-size: 90%;\n  font-style: italic;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Info",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "ContextCue",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic (and reversed card)",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        3
+                    ]
+                ],
+                [
+                    1,
+                    "any",
+                    [
+                        1,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Forward",
+                    "ord": 0,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Front}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Backwards",
+                    "ord": 1,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Back}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.info {\n  max-width: 30em;\n  margin: 0.75em auto;\n  color: #333;\n  font-size: 90%;\n  font-style: italic;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Info",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "ContextCue",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic (no reverse)",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Forward",
+                    "ord": 0,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Front}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::France}} hosted a meeting to consider the creation of a {{c2::European Community of Defence}} in {{c3::1951}}.",
+                ""
+            ],
+            "flags": 0,
+            "guid": "IN_cfju]/=",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Which countries apart from {{c1::France}} joined the {{c2::European Coal and Steel Community}} in {{c3::1952}}?<div>{{c4::Germany}}, {{c5::Italy}}, {{c6::Benelux}}<br></div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "h6|tOpli/H",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "European Community of Defence",
+                "Europäische Verteidigungsgemeinschaft",
+                "",
+                "en &lt;-&gt; de"
+            ],
+            "flags": 0,
+            "guid": "Rh,7F=QnK(",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "European Coal and Steel Community",
+                "Europäische Gemeinschaft für Kohle und Stahl",
+                "",
+                "en - de"
+            ],
+            "flags": 0,
+            "guid": "pT`)`@f-wt",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EGKS",
+                "Europäische Gemeinschaft für Kohle und Stahl",
+                "",
+                "akronym"
+            ],
+            "flags": 0,
+            "guid": "z(FWxLP^aG",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "akronym",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Europäische Gemeinschaft für Kohle und Stahl",
+                "Montanunion",
+                "",
+                "Alternative Bezeichnung"
+            ],
+            "flags": 0,
+            "guid": "P;NZD=k9t<",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "In den {{c1::1960er}} Jahren bremste {{c2::Charles de Gaulle}} das Vorankommen der Gemeinschaft mit der sogenannten {{c3::Politik des leeren Stuhls}} und mit seinem wiederholten Veto gegen den {{c4::britischen}} Beitritt zur EWG.",
+                "Quelle: Wikipedia"
+            ],
+            "flags": 0,
+            "guid": "J):wu=@;t5",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EU Geschichte: Am {{c1::25. März 1957}} bildeten die sogenannten {{c2::Römischen Verträge}} den nächsten Integrationsschritt. Mit diesen Verträgen gründeten dieselben sechs Staaten (der EGKS) die {{c3::Europäische Wirtschaftsgemeinschaft (EWG)}} sowie die {{c4::Europäische Atomgemeinschaft (EAG und Euratom)}}.",
+                "Nil Nerz Lego: Kaiserin (\"römisch\") Europa stolziert mit Nerzmantel am Nil und baut dann aus Lego eine Kneipe  und ein Atomkraftwerk"
+            ],
+            "flags": 0,
+            "guid": "qB9ZwoMR-n",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EWG",
+                "Europäische Wirtschaftsgemeinschaft",
+                "",
+                "akronym"
+            ],
+            "flags": 0,
+            "guid": "zg8]<|P?NX",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "akronym",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EEC",
+                "European Economic Community",
+                "",
+                "acronym"
+            ],
+            "flags": 0,
+            "guid": "pk8?/#pMI{",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "akronym",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EU Geschichte: Neben UK sind im Jahre {{c2::1973}} auch {{c1::Irland und Dänemark}} der EWG beigetreten.",
+                ""
+            ],
+            "flags": 0,
+            "guid": "CnH}1K@Sc2",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EU Geschichte: {{c1::Griechenland}} ist der EWG im Jahre {{c2::1981}} beigetreten.<div>Es war das {{c3::zehnte}} Mitglied der EG.<br></div>",
+                "Wim UrlaubsFOTOs"
+            ],
+            "flags": 0,
+            "guid": "tX%FoOG)ha",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EU Geschichte: {{c1::Spanien}} und {{c1::Portugal}} sind der EWG im Jahre {{c2::1986}} beigetreten.",
+                ""
+            ],
+            "flags": 0,
+            "guid": "CirdU~xITg",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EU Geschichte: {{c1::Österreich}}, {{c2::Schweden}} und {{c3::Finnland}} sind der EWG im Jahre {{c4::1995}} beigetreten.",
+                ""
+            ],
+            "flags": 0,
+            "guid": "C:0s%Ftd56",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Anzahl Mitgliedsstaaten der Europäische Union [Stand April 2004]?",
+                "15",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "OgKuFX]g6=",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EU Geschichte: Am {{c1::1.&nbsp;Mai 2004}} sind {{c2::10}} Staaten&nbsp;der EU beigetreten. Die EU besteht damit aus {{c2::25}} Mitgliedsstaaten.",
+                "10 Maikäfer auf der EU Flagge, die sich dann in Säure auflöst und in den Nil fließt"
+            ],
+            "flags": 0,
+            "guid": "jMf?i-<So=",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Welche 10 Staaten sind in der EU in der Erweiterung 2004 beigetreten? (Nord =&gt; Süd)<br>{{c1::Baltische Staaten (Estland, Lettland, Litauen)}}<div>{{c2::Polen, Tschechien, Slowakei}}</div><div>{{c3::Ungarn, Slowenien, Zypern und Malta}}</div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "PZpb>U%2zu",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::Rumänien}} und {{c1::Bulgarien}} wurden zum {{c2::1. Januar 2007}} in die Europäische Union aufgenommen",
+                ""
+            ],
+            "flags": 0,
+            "guid": "JJgjmtM$q+",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::Kroatien}} wurde zum {{c2::1. Juli 2013}} in die Europäische Union aufgenommen",
+                "auf dem Muli über einen HafenDAMM reiten"
+            ],
+            "flags": 0,
+            "guid": "L?gC-b%.cG",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": [
+                "EU",
+                "geopolitics",
+                "shareable::yes"
+            ]
+        }
+    ]
+}
